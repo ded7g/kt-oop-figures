@@ -28,20 +28,20 @@ class Square(val side: Double,val color: Color) : Figure(color) {
     override fun area(): Double = side * side
 
     override fun draw() {
-        println("Figure: square, area: ${area()} sq. units, side: $side, color: $color")
+        println("Figure: square, area: ${area()} sq. units, side: $side units, color: $color")
     }
 }
 class Rectangle(val width: Double, val height: Double, val color: Color) : Figure(color) {
     override fun area(): Double = width * height
 
     override fun draw() {
-        println("Figure: rectangle, area: ${area()} sq. units, width: $width, height: $height, color: $color")
+        println("Figure: rectangle, area: ${area()} sq. units, width: $width units, height: $height units, color: $color")
     }
 }
 class IsoscelesTrapezoid(val topBase: Double, val bottomBase: Double, val height: Double, val color: Color) : Figure(color) {
     override fun area(): Double = ((topBase + bottomBase) / 2) * height
 
     override fun draw() {
-        println("Figure: isosceles trapezoid, area: ${area()} sq. units, topBase: $topBase, bottomBase: $bottomBase, height: $height, color: $color")
+        println("Figure: isosceles trapezoid, area: ${area()} sq. units, topBase: $topBase units, bottomBase: $bottomBase units, height: $height units, color: $color")
     }
 }
