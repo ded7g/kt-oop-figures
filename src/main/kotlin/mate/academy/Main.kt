@@ -5,7 +5,7 @@ import mate.academy.service.FigureSupplier
 
 fun main() {
     val supplier = FigureSupplier()
-    val list = Array(6) { i ->
+    val list = Array(10) { i ->
         if (i < 5) supplier.getRandomFigure() else supplier.getDefaultFigure()
     }
 

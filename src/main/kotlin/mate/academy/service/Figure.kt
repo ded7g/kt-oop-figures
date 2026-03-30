@@ -3,8 +3,6 @@ package mate.academy.service
 import mate.academy.model.Color
 import kotlin.math.PI
 
-private val colorSupplier = ColorSupplier()
-
 abstract class Figure(color: Color) {
     abstract fun area(): Double
     abstract fun draw()
@@ -23,7 +21,7 @@ open class RightTriangle(val firstleg: Double, val secondleg: Double, val color:
         return 0.5 * firstleg * secondleg
     }
     override fun draw() {
-        println("Figure: circle, area: ${area()} sq. units, firstLeg: $firstleg units, secondLeg: $secondleg units, color: $color")
+        println("Figure: rightTriangle, area: ${area()} sq. units, firstLeg: $firstleg units, secondLeg: $secondleg units, color: $color")
     }
 }
 class Square(val side: Double,val color: Color) : Figure(color) {
